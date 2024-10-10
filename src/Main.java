@@ -1,3 +1,5 @@
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+
 public class Main {
     public static void main (String [] args){
         System.out.println("Hola a todos");
@@ -18,11 +20,36 @@ public class Main {
         System.out.println(libro4.imprimircubierta());
         libro5.imprimir();
         System.out.println(libro5.imprimircubierta());
-
+        //Clase de las canciones
+        //CON EL METODO 1:
         System.out.println("CLASE: CANCIONES");
         cancion pista1= new cancion("Close to you","Carpenters","Indie", 3.26);
         cancion pista2= new cancion("Virgen","Los adolescentes","Salsa", 3.20);
+        cancion pista3 = new cancion();
+        /*
         pista1.mostrar();
         pista2.mostrar();
+        */
+        //CON EL METODO 2:
+
+        System.out.println(pista1.getNombre());
+        /*
+        System.out.println(pista1.getArtista());
+        System.out.println(pista1.getGenero());
+        System.out.println(pista1.getDuracion());
+        System.out.println(pista2.getNombre());
+        System.out.println(pista2.getArtista());
+        System.out.println(pista2.getGenero());
+        System.out.println(pista2.getDuracion());
+        */
+        //CON EL METODO 3:
+
+        pista1.setNombre("OK"); //cambiando el valor de "nombre" con el get atraves del set
+        System.out.println(pista1.getNombre());
+        pista3.setNombre("RUN");
+        pista3.setArtista("Kanye West");
+        pista3.setGenero("Pop");
+        pista3.setDuracion(3.26);
+
     }
 }
