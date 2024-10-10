@@ -19,5 +19,10 @@ public class Main {
         libro5.imprimir();
         System.out.println(libro5.imprimircubierta());
 
+        System.out.println("CLASE: CANCIONES");
+        cancion pista1= new cancion("Close to you","Carpenters","Indie", 3.26);
+        cancion pista2= new cancion("Virgen","Los adolescentes","Salsa", 3.20);
+        pista1.mostrar();
+        pista2.mostrar();
     }
 }
