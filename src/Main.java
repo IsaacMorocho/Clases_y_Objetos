@@ -75,6 +75,11 @@ public class Main {
         per2.mostrarPersonas();
 
         //CLASE TRANSPORTE
+        Transporte transp1=new Transporte("Bus",2004,"Terrestre");
+        Transporte transp2=new Transporte("Avion",2001,"Aereo");
+
+        transp1.mostrarTransporte();
+        transp2.mostrarTransporte();
         
         
     }
