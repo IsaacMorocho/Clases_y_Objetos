@@ -80,6 +80,14 @@ public class Main {
 
         transp1.mostrarTransporte();
         transp2.mostrarTransporte();
+
+        //CLASE PELICULA
+        Pelicula peli1=new Pelicula("Avengers",2011,"Accion y Ciencia Ficción");
+        Pelicula peli2=new Pelicula("Interestelar",2014,"Ciencia Ficción y Drama");
+
+        peli1.mostrarPeliculas();
+        peli2.mostrarPeliculas();
+        
         
         
     }
