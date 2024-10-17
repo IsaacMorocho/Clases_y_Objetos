@@ -4,6 +4,7 @@ public class Main {
     public static void main (String [] args){
         System.out.println("Hola a todos");
         //Para declarar el objeto o instanciar una clase
+        //CLASE LIBRO
         libro libro1= new libro("El resplandor", "Stephen King", "De bolsillo", 600);
         libro libro2= new libro("Anna Karenina","Leo Tolstoy"," J. Peder",450);
         libro libro3= new libro("Sapiens","Yuval Noah Harari","Winslade",233);
@@ -20,16 +21,16 @@ public class Main {
         System.out.println(libro4.imprimircubierta());
         libro5.imprimir();
         System.out.println(libro5.imprimircubierta());
-        //Clase de las canciones
+        //CLASE CANCIONES 
         //CON EL METODO 1:
         System.out.println("CLASE: CANCIONES");
         cancion pista1= new cancion("Close to you","Carpenters","Indie", 3.26);
         cancion pista2= new cancion("Virgen","Los adolescentes","Salsa", 3.20);
         cancion pista3 = new cancion();
-        /*
+        
         pista1.mostrar();
         pista2.mostrar();
-        */
+        
         //CON EL METODO 2:
 
         System.out.println(pista1.getNombre());
@@ -51,5 +52,30 @@ public class Main {
         pista3.setGenero("Pop");
         pista3.setDuracion(3.26);
 
+        //CLASE MATERIA
+        Materia mat1= new Materia("Ecologia", "DS24B", 2);
+        Materia mat2= new Materia("Redes", "DS24B", 4);
+
+        System.out.println("**MATERIAS**");
+        mat1.mostrar();
+        mat2.mostrar();
+
+        //CLASE AUTO
+        Auto carro1= new Auto("Nissan",2019,"Gris");
+        Auto carro2= new Auto("Kia",2022,"Rojo");
+
+        carro1.mostrarCarros();
+        carro2.mostrarCarros();
+        
+        //CLASE PERSONA
+        Persona per1=new Persona("Ariel",23,80.4);
+        Persona per2=new Persona("Javier",19,72.8);
+
+        per1.mostrarPersonas();
+        per2.mostrarPersonas();
+
+        //CLASE TRANSPORTE
+        
+        
     }
 }
